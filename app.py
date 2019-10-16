@@ -4,6 +4,8 @@ from bson.objectid import ObjectId
 from datetime import datetime
 import os
 
+TENOR_API_KEY = os.getenv("TENOR_API_KEY")
+
 app = Flask(__name__)
 
 host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/goloo')
@@ -17,7 +19,7 @@ reviews = db.reviews
 @app.route('/')
 def hompage():
     """Show Hompage"""
-    return render_template('test.html')
+    return render_template('base.html')
 
 
 if __name__ == "__main__":
