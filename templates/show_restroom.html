@@ -1,0 +1,25 @@
+<!--show_restroom.html -->
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container">
+        <div class="row text-center" style="background-color:lightgrey">
+            <div class="col-md-12 text center">
+                <h3 style="padding-right: 10px"><a href="/restrooms/{{ inventory._id }}">{{inventory.restroom_name}}</a></h3>
+                </div class="panel-head">
+                    <img src="{{ inventory.pic_path }}" style="width: 150px; height: 100px; padding-bottom: 15px; padding-left: 15px; padding-right: 10px">
+                    <h4 style="padding-right: 10px">{{inventory.restroom_gender}}</h4>
+                    <h5 style="padding-right: 10px">${{inventory.restroom_price}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr> {% include 'partials/comment_form.html' %} </hr>
+    <!-- Show Comments -->
+    {% for comment in comments %}
+        {% include 'partials/comment.html' %}
+    {% endfor %}
+
+{% endblock %}
+
