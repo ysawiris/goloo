@@ -32,9 +32,8 @@ def create_review():
         'name': request.form.get('name'),
         'content': request.form.get('content'),
     }
-    print(review)
-    reviews.insert_one(review)
-    
+    review_id = reviews.insert_one(review).inserted_id
+    return redirect(url_for('show_reviews.html', review=review, review_id=review_id))
 
 
 if __name__ == "__main__":
