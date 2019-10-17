@@ -1,7 +1,7 @@
 <!--show_restroom.html -->
 {% extends 'base.html' %}
 {% block content %}
-
+    <iframe src={{inventory.google_map}} width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     <div class="container">
         <div class="row text-center" style="background-color:lightgrey">
             <div class="col-md-12 text center">
@@ -14,6 +14,7 @@
             </div>
         </div>
     </div>
+    
 
     <hr> {% include 'partials/comment_form.html' %} </hr>
     <!-- Show Comments -->
