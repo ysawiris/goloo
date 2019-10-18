@@ -8,8 +8,8 @@
                 </div class="panel-body">
                     <img src="{{ inventory.pic_path }}" style="width: 150px; height: 100px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">
                     <h3 style="padding-right: 10px"><a href="/restrooms/{{ inventory._id }}">{{inventory.restroom_name}}</a></h3>
-                    <h4 style="padding-right: 10px">{{inventory.restroom_gender}}</h4>
-                    <h5 style="padding-right: 10px">${{inventory.restroom_price}}</h5>
+                    <h4 style="padding-right: 10px"><a href="/restrooms/{{ inventory._id }}">{{inventory.restroom_gender}}</a></h4>
+                    <h5 style="padding-right: 10px"><a href="/restrooms/{{ inventory._id }}">${{inventory.restroom_price}}</a></h5>
                 </div>
             </div>
     </div>
