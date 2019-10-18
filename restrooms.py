@@ -37,7 +37,7 @@ restroom_5 = {
     'restroom_name': 'Little Delhi ',
     'restroom_gender': 'All Gender Restroom',
     'pic_path' : '/static/little_delhi.jpg',
-    'restroom_price' : "FREE",
+    'restroom_price' : "NOT FREE",
     'google_map': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2457512081683!2d-122.41134804960257!3d37.78428011928715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580858fb0dd73%3A0xb45574ee76558eec!2sLittle%20Delhi!5e0!3m2!1sen!2sus!4v1571348909046!5m2!1sen!2sus"
 }
 
